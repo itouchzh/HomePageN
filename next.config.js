@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    swcMinify: true,
     images: {
         remotePatterns: [
             {
@@ -8,6 +9,9 @@ const nextConfig = {
             },
         ],
     },
+    // experimental: {
+    //     serverActions: true,
+    // },
 }
 
 module.exports = nextConfig
